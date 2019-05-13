@@ -1,24 +1,22 @@
-# README
+# Germany Reports
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is to present news for churches throughout Germany.
 
-Things you may want to cover:
+### UX for contributors
+This project has the following goals:
 
-* Ruby version
+- Aesthetic presentation
+- Responsive UI
+- Ease of contribution
 
-* System dependencies
+The last point is important—we want as least-techinical people as possible able to contribute to this site. For this my thoughts are as follows:
 
-* Configuration
+- One html (slim) page per church
+- No extra routing, controller, or navbar modifications should be required, only to add an html file to the views folder
 
-* Database creation
+### Design
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Nav hamburger top left expands into flexbox (horizontal for wide screens, vert for mobile), showing category boxes with their sub-categories listed underneath (visible).
+- Under articles' main heading will be the date. If more than one article exists, a dropdown will be there next to the date to see archived versions.
+- General design is minimalist, simplistic, maximising ease of reading.
+- Videos will be hosted on (youtube?), images on (google photos?)
