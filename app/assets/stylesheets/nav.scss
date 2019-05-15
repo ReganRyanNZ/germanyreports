@@ -1,0 +1,33 @@
+
+nav {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  list-style: none;
+  border-right: lightgrey 1px solid;
+  overflow: scroll;
+  height: 100vh;
+
+  .nav_category {
+    font-weight: bold;
+  }
+  li + .nav_category {
+    margin-top: 10px;
+  }
+
+  .nav_report_link {
+    padding: 0 10px;
+    &:hover {
+      background-color: #f2f2f5;
+    }
+    a {
+      text-decoration: none;
+      display: block;
+    }
+  }
+}
+
+main {
+  overflow: scroll;
+  height: 100vh;
+}

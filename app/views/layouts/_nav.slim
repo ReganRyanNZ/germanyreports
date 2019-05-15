@@ -1,6 +1,6 @@
 nav
   - @nav_items.each do |category, reports|
-    li = category.titleize
+    li.nav_category = category.titleize
     - reports.each do |report|
-      li
+      li.nav_report_link
         = link_to(report.titleize, Pathname.new(root_path).join(category, report).to_s)
