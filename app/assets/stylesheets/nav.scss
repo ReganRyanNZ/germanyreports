@@ -1,12 +1,18 @@
+// This file contains all css code related to the navbar
+// The design needed in the view is simply: body { nav, main }
+// The nav bar will be visible on the left side in wider screens,
+// and in small screens the main will be set to fullscreen, and
+// you can scroll the navbar back on screen.
 
 nav {
-  width: 100%;
+  display: inline-block;
   padding: 10px;
   box-sizing: border-box;
   list-style: none;
   border-right: lightgrey 1px solid;
   overflow: scroll;
   height: 100vh;
+  width: 240px;
 
   .nav_category {
     font-weight: bold;
@@ -28,6 +34,31 @@ nav {
 }
 
 main {
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: visible;
   height: 100vh;
+
+  display: inline-block;
+}
+
+@media (max-width: 880px) {
+  body {
+    width: calc(240px + 100vw);
+    overflow-x: scroll;
+  }
+  nav {
+
+  }
+  main {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 881px) {
+  nav {
+
+  }
+  main {
+    width: calc(100% - 240px);
+  }
 }
