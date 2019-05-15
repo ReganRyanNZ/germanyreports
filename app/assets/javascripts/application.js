@@ -19,5 +19,5 @@
 // This scrolls the url addres bar out of the way on mobile devices, simulating a fullscreen app
 document.addEventListener("turbolinks:load", function() {
   window.scrollTo(0,1);
-  document.getElementsByClassName("h1")[0].style.color = 'pink';
+  // document.getElementsByClassName("h1")[0].style.color = 'pink';
 });
