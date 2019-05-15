@@ -25,6 +25,9 @@
     margin: 2rem;
     display: inline-block;
     text-decoration: none;
+    &:visited {
+      color: #0074D9;
+    }
   }
 
   // This wrapper is a hack to get videos with responsive 16:9 dimensions
