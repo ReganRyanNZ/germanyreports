@@ -1,8 +1,12 @@
 nav
-  li.nav_title = link_to "Germany Reports", root_path
-  li.nav_report_link = link_to "Introduction", root_path
+  .btn-nav
+    = image_tag "chevron-left.svg"
+  li.nav_title
+    = link_to "Germany Reports", root_path
+  li class="nav_report_link #{"active" if @current_page == "/"}"
+    = link_to "Introduction", root_path
   - @nav_items.each do |category, reports|
     li.nav_category = category.titleize
     - reports.each do |report|
-      li.nav_report_link
+      li class="nav_report_link #{"active" if @current_page[[category,report].join("/")]}"
         = link_to(report.titleize, Pathname.new(root_path).join(category, report).to_s)

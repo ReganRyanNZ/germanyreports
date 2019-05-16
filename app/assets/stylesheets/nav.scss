@@ -6,13 +6,28 @@
 
 nav {
   display: inline-block;
-  padding: 10px;
   box-sizing: border-box;
   list-style: none;
   border-right: lightgrey 1px solid;
   overflow: scroll;
   height: 100vh;
   width: 240px;
+
+  * {
+    padding-left: 10px;
+  }
+  .btn-nav {
+    position: absolute;
+    left: 240px;
+    top: 50%;
+    padding: 20px;
+    padding-left: 10px;
+    img {
+      padding: 0;
+      width: 30px;
+      filter: opacity(50%);
+    }
+  }
 
   .nav_title {
     font-weight: bold;
@@ -25,20 +40,28 @@ nav {
   }
 
   .nav_category {
+    color: #777;
   }
   li + .nav_category {
     margin-top: 10px;
   }
 
   .nav_report_link {
+    &.active {
+      border-right: #FF851B solid 5px;
+      color: #222;
+      font-weight: 600;
+      background-color: #f3f3f3;
+    }
     padding-right: 10px;
     padding-left: 20px;
     &:hover {
-      background-color: #f2f2f5;
+      background-color: #f3f3f3;
     }
     a {
       text-decoration: none;
       display: block;
+      color: #111;
     }
   }
   a {

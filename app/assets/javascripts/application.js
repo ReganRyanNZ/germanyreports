@@ -16,8 +16,9 @@
 //= require_tree .
 
 
-// This scrolls the url addres bar out of the way on mobile devices, simulating a fullscreen app
+// This scrolls the url address bar out of the way on mobile devices, simulating a fullscreen app
+// It also scrolls the navigation out of the way (so the user starts on content, but has a glimpse
+// of where the navigation is)
 document.addEventListener("turbolinks:load", function() {
-  window.scrollTo(0,1);
-  // document.getElementsByClassName("h1")[0].style.color = 'pink';
+  window.scrollTo(240,1);
 });

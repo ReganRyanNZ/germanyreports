@@ -13,5 +13,6 @@ class ApplicationController < ActionController::Base
         path.remove(".slim").split("/").last
       end
     end
+    @current_page = request.env['PATH_INFO']
   end
 end
