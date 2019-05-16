@@ -1,5 +1,6 @@
 nav
   li.nav_title = link_to "Germany Reports", root_path
+  li.nav_report_link = link_to "Introduction", root_path
   - @nav_items.each do |category, reports|
     li.nav_category = category.titleize
     - reports.each do |report|
