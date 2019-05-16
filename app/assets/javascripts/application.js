@@ -20,5 +20,5 @@
 // It also scrolls the navigation out of the way (so the user starts on content, but has a glimpse
 // of where the navigation is)
 document.addEventListener("turbolinks:load", function() {
-  window.scrollTo(240,1);
+  window.scrollTo(240,0);
 });
