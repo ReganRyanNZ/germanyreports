@@ -23,6 +23,9 @@ nav {
     top: 50%;
     padding: 20px;
     padding-left: 10px;
+    @media (max-width: 500px) {
+      padding-left: 1%;
+    }
     img {
       padding: 0;
       width: 30px;
