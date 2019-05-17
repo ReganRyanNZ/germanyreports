@@ -2,6 +2,10 @@ nav
   .btn-nav#scrollLeft
     = image_tag "chevron-left.svg"
   li.nav_title
+    .flag
+      .black
+      .red
+      .yellow
     = link_to "Germany Reports", root_path
   li class="nav_report_link #{"active" if @current_page == "/"}"
     = link_to "Introduction", root_path
