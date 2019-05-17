@@ -1,6 +1,7 @@
 .report {
   margin: auto;
   padding-top: 4rem;
+  padding-bottom: 8rem;
   width: 80%;
   max-width: 600px;
   text-align: center;
@@ -19,15 +20,6 @@
   .caption {
     color: #777;
     margin-top: 1rem;
-  }
-
-  .btn-index {
-    margin: 2rem;
-    display: inline-block;
-    text-decoration: none;
-    &:visited {
-      color: #0074D9;
-    }
   }
 
   // This wrapper is a hack to get videos with responsive 16:9 dimensions

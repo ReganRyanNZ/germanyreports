@@ -83,23 +83,18 @@ main {
   display: inline-block;
 }
 
-@media (max-width: 880px) {
-  body {
-    width: calc(240px + 100vw);
-    overflow-x: scroll;
+.btn-index {
+  margin: 2rem;
+  display: inline-block;
+  color: #0074D9;
+  &:hover {
+    cursor: pointer;
   }
-  main {
-    width: 100vw;
-  }
-}
-
-@media (min-width: 881px) {
-  .btn-nav {
-    display: none;
-  }
-  main {
-    width: calc(100% - 240px);
-  }
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 .flag {
@@ -120,5 +115,24 @@ main {
     &:nth-child(3) {
       background-color: #FFDC00;
     }
+  }
+}
+
+@media (max-width: 880px) {
+  body {
+    width: calc(240px + 100vw);
+    overflow-x: scroll;
+  }
+  main {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 881px) {
+  .btn-nav, .btn-index {
+    display: none;
+  }
+  main {
+    width: calc(100% - 240px);
   }
 }
