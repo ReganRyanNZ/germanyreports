@@ -7,7 +7,10 @@ document.addEventListener("turbolinks:load", function() {
             scrollLeft(document.body, 0, 400);
         }
     }
-
+    document.querySelector("h1").onclick = function () {
+        scrollLeft(document.body, 0, 400);
+    }
+    
     function scrollLeft(element, to, duration) {
     var start = element.scrollLeft,
         change = to - start,
