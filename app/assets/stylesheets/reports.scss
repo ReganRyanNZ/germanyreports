@@ -1,3 +1,5 @@
+@import 'variables';
+
 .report {
   margin: auto;
   padding-top: 4rem;
@@ -18,7 +20,7 @@
   }
 
   .caption {
-    color: #777;
+    color: $darkgray;
     margin-top: 1rem;
   }
 

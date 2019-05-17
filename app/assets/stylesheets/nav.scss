@@ -3,6 +3,7 @@
 // The nav bar will be visible on the left side in wider screens,
 // and in small screens the main will be set to fullscreen, and
 // you can scroll the navbar back on screen.
+@import 'variables';
 
 nav {
   display: inline-block;
@@ -42,7 +43,7 @@ nav {
   }
 
   .nav_category {
-    color: #777;
+    color: $darkgray;
   }
   li + .nav_category {
     margin-top: 10px;
@@ -50,7 +51,7 @@ nav {
 
   .nav_report_link {
     &.active {
-      border-right: #FF851B solid 5px;
+      border-right: $orange solid 5px;
       color: #222;
       font-weight: 600;
       background-color: #f3f3f3;
@@ -63,7 +64,7 @@ nav {
     a {
       text-decoration: none;
       display: block;
-      color: #111;
+      color: $black;
     }
   }
   a {
@@ -86,7 +87,7 @@ main {
 .btn-index {
   margin: 2rem;
   display: inline-block;
-  color: #0074D9;
+  color: $blue;
   &:hover {
     cursor: pointer;
   }
@@ -107,13 +108,13 @@ main {
     height: 100%;
 
     &:nth-child(1) {
-      background-color: #111111;
+      background-color: $black;
     }
     &:nth-child(2) {
-      background-color: #FF4136;
+      background-color: $red;
     }
     &:nth-child(3) {
-      background-color: #FFDC00;
+      background-color: $yellow;
     }
   }
 }
