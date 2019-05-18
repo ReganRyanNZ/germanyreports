@@ -6,10 +6,11 @@ document.addEventListener("turbolinks:load", function() {
   document.querySelector("h1").onclick = function () {
     toggleNavMenu();
   }
-  document.querySelector(".btn-index").onclick = function () {
-    toggleNavMenu();
+  if(document.querySelector(".btn-index")) {
+    document.querySelector(".btn-index").onclick = function () {
+      toggleNavMenu();
+    }
   }
-
   function toggleNavMenu() {
     if (document.body.scrollLeft == 0) {
       scrollLeft(document.body, 280, 400);
@@ -19,6 +20,7 @@ document.addEventListener("turbolinks:load", function() {
   }
 
   function scrollLeft(element, to, duration) {
+    console.log("Scrolling left to " + to);
     var start = element.scrollLeft,
       change = to - start,
       currentTime = 0,
