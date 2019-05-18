@@ -5,19 +5,20 @@
 // you can scroll the navbar back on screen.
 @import 'variables';
 
+$nav-width: 280px; // remember that the animatedScrollLeft js needs to know this number too
 nav {
   display: inline-block;
   box-sizing: border-box;
   height: 100vh;
-  width: 240px;
+  width: $nav-width;
   overflow: scroll;
-  padding: 1.5rem 0 4rem 20px;
+  padding: 1.5rem 0 4rem  2.4rem;
   list-style: none;
   border-right: lightgrey 1px solid;
 
   .btn-nav {
     position: absolute;
-    left: 240px;
+    left: $nav-width;
     top: 50%;
     padding: 20px;
     padding-left: 10px;
@@ -121,7 +122,7 @@ main {
 
 @media (max-width: 880px) {
   body {
-    width: calc(240px + 100vw);
+    width: calc(#{$nav-width} + 100vw);
     overflow-x: scroll;
   }
   main {
@@ -134,6 +135,6 @@ main {
     display: none;
   }
   main {
-    width: calc(100% - 240px);
+    width: calc(100% - #{$nav-width});
   }
 }

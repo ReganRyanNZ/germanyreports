@@ -12,7 +12,7 @@ document.addEventListener("turbolinks:load", function() {
 
   function toggleNavMenu() {
     if (document.body.scrollLeft == 0) {
-      scrollLeft(document.body, 240, 400);
+      scrollLeft(document.body, 280, 400);
     } else {
       scrollLeft(document.body, 0, 400);
     }
@@ -49,6 +49,6 @@ document.addEventListener("turbolinks:load", function() {
 
 
   // Scroll from nav to content on page load
-  scrollLeft(document.body, 240, 400);
+  scrollLeft(document.body, 280, 400);
   history.scrollRestoration = 'manual';
 });
