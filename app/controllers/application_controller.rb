@@ -4,6 +4,9 @@ class ApplicationController < ActionController::Base
   # This setup is very un-rails-y, not quote sure where the logic should go..
   # The basic premise is that app/views/reports/categories/**/* is where any
   # files added will automatically populate the navbar.
+
+  # Note that to sort the categories they have been statically listed below,
+  # so adding a new folder will not auto-populate the navbar
   def setup_nav_items
     dir = Rails.root.join('app', 'views', 'reports', 'categories').to_s
     @nav_items = {}
