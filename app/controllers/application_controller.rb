@@ -25,3 +25,5 @@ class ApplicationController < ActionController::Base
     @current_page = request.env['PATH_INFO']
   end
 end
+
+
