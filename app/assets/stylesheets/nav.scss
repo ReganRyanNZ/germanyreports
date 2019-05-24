@@ -19,8 +19,7 @@ nav {
   .btn-nav {
     position: absolute;
     left: $nav-width;
-    padding: 20px;
-    padding-left: 10px;
+    padding: 0 10px 20px 10px;
     @media (max-width: 500px) {
       padding-left: 1%;
     }
