@@ -23,6 +23,8 @@
   }
   .multiple-photos > * {
     padding: 2px;
+    box-sizing: border-box;
+    display: inline-block;
   }
   .caption {
     color: $darkgray;
