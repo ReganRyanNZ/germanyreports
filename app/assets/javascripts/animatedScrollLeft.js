@@ -7,8 +7,9 @@ document.addEventListener("turbolinks:load", function() {
     toggleNavMenu();
   }
   if(document.querySelector(".btn-index")) {
-    document.querySelector(".btn-index").onclick = function () {
+    document.querySelector(".btn-index").onclick = function (e) {
       toggleNavMenu();
+      e.stopPropagation();
     }
   }
   function toggleNavMenu() {
