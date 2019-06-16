@@ -19,13 +19,16 @@ nav {
   .btn-nav {
     position: absolute;
     left: $nav-width;
+    top: 12px;
     padding: 0 10px 20px 10px;
+    width: 24px;
+    height: 24px;
     @media (max-width: 500px) {
       padding-left: 1%;
     }
     img {
       padding: 0;
-      width: 30px;
+      width: 100%;
       filter: opacity(50%);
     }
   }
