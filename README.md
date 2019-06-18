@@ -16,12 +16,11 @@ The last point is important—we want as least-techinical people as possible abl
 
 ## Design
 
-- Nav hamburger top left expands into flexbox (horizontal for wide screens, vert for mobile), showing category boxes with their sub-categories listed underneath (visible).
-- Under articles' main heading will be the date. If more than one article exists, a dropdown will be there next to the date to see archived versions.
+- Nav is to the left, showing category boxes with their sub-categories listed underneath.
+- Under articles' main heading will be the date. If more than one article exists, a dropdown will be there next to the date to see archived versions. Note that until we use these reports a second time we don't need to worry about it.
 - General design is minimalist, simplistic, maximising ease of reading.
 - Videos will be hosted on youtube
   - Click on "embed" to get embed code
   - Under embed code will be a "show more" that lets you disable next video suggestions
   - Actually better to copy embed code from existing video, and replace the unique code
-- Images will be hosted on dropbox
-  - Get share link, change "dl=0" to "raw=1" and use that as img src.
+- Images will be self-hosted, but must be as small as possible, using tinyjpg or tinypng etc.
