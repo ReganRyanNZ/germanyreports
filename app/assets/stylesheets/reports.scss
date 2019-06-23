@@ -46,6 +46,12 @@
     }
   }
 
+  .local-video {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+  }
+
   .bank-details {
     ul {
       margin: 0;
