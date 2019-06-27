@@ -52,6 +52,6 @@ document.addEventListener("turbolinks:load", function() {
 
 
   // Scroll from nav to content on page load
-  scrollLeft(document.body, 280, 400);
+  document.body.scrollLeft = 280;
   history.scrollRestoration = 'manual';
 });
