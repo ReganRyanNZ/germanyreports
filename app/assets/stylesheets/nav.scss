@@ -23,6 +23,7 @@ nav {
     padding: 0 10px 20px 10px;
     width: 24px;
     height: 24px;
+    z-index: 1;
     @media (max-width: 500px) {
       padding-left: 1%;
     }
