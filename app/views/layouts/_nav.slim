@@ -16,3 +16,6 @@ nav
     - reports.each do |report|
       li class="nav_report_link #{"active" if @current_page[[category,report].join("/")]}"
         = link_to(report.titleize, Pathname.new(root_path).join(category, report).to_s)
+
+  li class="nav_report_link #{"active" if @current_page["archives"]}"
+    = link_to("Archives", archives_path)
