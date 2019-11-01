@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 .report {
   margin: auto;
@@ -11,7 +11,7 @@
   p {
     text-align: left;
   }
-  &> * {
+  & > * {
     margin-top: 2rem;
   }
   li {
@@ -29,6 +29,10 @@
   .caption {
     color: $darkgray;
     margin-top: 1rem;
+  }
+
+  video {
+    max-width: 100%;
   }
 
   // This wrapper is a hack to get videos with responsive 16:9 dimensions
