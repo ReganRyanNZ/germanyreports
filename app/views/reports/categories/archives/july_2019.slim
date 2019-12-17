@@ -1,6 +1,5 @@
-p #{@hello}
-p sdf
-p fda
-- @archive_items.each do |report|
-  li class="nav_report_link"
-    = link_to(report.titleize, Pathname.new(root_path).join("archives", @date, report).to_s)
+.report
+  h1 July 2019 Reports
+  - @archive_items.each do |report|
+    li class="nav_report_link archive_list-item"
+      = link_to(report.titleize, Pathname.new(root_path).join("archives", @date, report).to_s)
