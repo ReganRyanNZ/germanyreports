@@ -1,9 +1,0 @@
-br
-br
-br
-br
-- @archive_links.each do |date, reports|
-  li.nav_category = date.titleize
-  - reports.each do |report|
-    li class="nav_report_link"
-      = link_to(report.titleize, Pathname.new(root_path).join("archives", date, report).to_s)

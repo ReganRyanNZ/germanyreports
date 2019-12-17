@@ -16,11 +16,13 @@ class ApplicationController < ActionController::Base
       cities_we_are_burdened_for
       various_works
       building_projects
+      archives
     )
     cats.each do |cat|
       @nav_items[cat] = Dir.glob("#{dir}/#{cat}/*").map do |path|
+        next unless path['.slim']
         path.remove(".slim").split("/").last
-      end.sort
+      end.compact.sort
     end
     @current_page = request.env['PATH_INFO']
   end

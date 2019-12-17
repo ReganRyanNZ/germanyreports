@@ -66,4 +66,29 @@
       list-style: none;
     }
   }
+
+  .archive_list-item {
+    margin: 0 auto;
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    max-width: 500px;
+    a {
+      display: block;
+      position: relative;
+      width: 100%;
+      padding: 8px 8px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      &:hover {
+        background-color: #ddd;
+      }
+      &::after {
+        position: absolute;
+        display: block;
+        border: 10px solid transparent;
+      }
+    }
+  }
 }
