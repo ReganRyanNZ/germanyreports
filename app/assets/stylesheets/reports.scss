@@ -30,7 +30,14 @@
     color: $darkgray;
     margin-top: 1rem;
   }
-
+  .quote {
+    color: #999;
+    font-size: 1.2em;
+    font-style: italic;
+    padding-left: 1.2em;
+    border-left: 1px solid #aaa;
+    font-family: serif;
+  }
   video {
     max-width: 100%;
   }
